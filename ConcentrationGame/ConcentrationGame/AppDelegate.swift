@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Concentration Game
+//  ConcentrationGame
 //
-//  Created by Ahmed Rezik on 3/15/19.
+//  Created by Ahmed Rezik on 3/30/19.
 //  Copyright © 2019 Ahmed Rezik. All rights reserved.
 //
 
