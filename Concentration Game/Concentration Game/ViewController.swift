@@ -18,6 +18,8 @@ class ViewController: UIViewController {
             CountLabel.text = String(NumberOfFlips)
         }
     }
+    
+    var emojiChoices = ["❤️","💎","👻","💕","👨🏻‍💻","🌖","❤️","💎","👻","💕","👨🏻‍💻","🌖"]
 
     
     @IBAction func touchCard(_ sender: UIButton) {
@@ -25,7 +27,7 @@ class ViewController: UIViewController {
         let CardNumber = CardButtons.index(of: sender)!
         NumberOfFlips += 1
         print("Number of Cards : \(String(describing: CardNumber))")
-        
+        flipCard(withEmoji: emojiChoices[CardNumber], button: sender)
         
         
     }
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
     func flipCard(withEmoji emoji : String, button: UIButton ){
         if(button.currentTitle == emoji){
             button.setTitle("", for: .normal )
-            button.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 1)
             
         }
         else{
